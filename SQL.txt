@@ -1,0 +1,63 @@
+SQL:
+
+1)	Database is a collection of data stored in a format that can easily be accessed.
+2)	Installing My sql
+Mysql.com
+Got to download
+Community server
+Download 64 bit 
+
+Queries:
+Create table:
+create table PUBLISHER
+(
+  name varchar(20) primary key,
+  Address varchar(20),
+  phone integer
+  );
+  insert into PUBLISHER values('&name','&Address','&phone');
+  insert into PUBLISHER values('satish','bangalore','9556789955');
+
+
+
+
+INSERT :
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+Only data:
+INSERT INTO table_name
+VALUES (value1, value2, value3, ...);
+Delete row:
+DELETE FROM table_name WHERE condition;
+UPDATE :
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+
+
+
+
+Add column:
+ALTER TABLE tablename
+Add entityname varchar(100);
+
+Select top:
+Select selection * from table_name
+Limit 3;
+ Using here condition:
+Select selection * from table_name
+Where country = ‘germany’
+Limit 3;
+Count:
+SELECT COUNT(ProductID)
+FROM Table_name ;
+TO check the count of the repetations:
+SELECT COUNT(ProductID)
+FROM Products
+where ProductID=6 :
+
+Like:
+SELECT * FROM Table_name
+WHERE CustomerName LIKE 'a%';	
+
+
